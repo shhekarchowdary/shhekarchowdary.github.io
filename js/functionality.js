@@ -78,6 +78,7 @@ if (sessionStorage.getItem("session_email")) {
     getTaskArray.push(getTaskObj);
     localStorage.setItem('CreatedTasks', JSON.stringify(getTaskArray));
     alert('Task Created Successfully');
+    window.location.href = "mytasks.html";
   }
 
 
@@ -93,6 +94,7 @@ if (sessionStorage.getItem("session_email")) {
     getAssignedProjectArray.push(getAssignedProjectObj);
     localStorage.setItem('AssignedProjects', JSON.stringify(getAssignedProjectArray));
     alert('Project Assigned Successfully');
+    window.location.href = "myprojects.html";
   }
 
 
@@ -111,6 +113,7 @@ if (sessionStorage.getItem("session_email")) {
     getAssignedTaskArray.push(getAssignedTaskObj);
     localStorage.setItem('AssignedTasks', JSON.stringify(getAssignedTaskArray));
     alert('Task Assigned Successfully');
+    window.location.href = "mytasks.html";
   }
 
 
@@ -153,6 +156,7 @@ if (sessionStorage.getItem("session_email")) {
     localStorage.setItem('AssignedProjects', JSON.stringify(getMarkedCompletedArray));
     document.getElementById("mark-completed-manager-project").innerHTML = "Done";
     alert('Project Marked Completed');
+    window.location.href = "assigned-projects.html";
   }
 
 
@@ -181,6 +185,7 @@ if (sessionStorage.getItem("session_email")) {
     document.getElementById("mark-completed-manager-project").innerHTML = "Done";
     localStorage.removeItem('MarkCompleted');
     alert('Project Completed');
+    window.location.href = "done-projects.html";
   }
 
   function markCompleted() {
@@ -208,6 +213,7 @@ if (sessionStorage.getItem("session_email")) {
     localStorage.setItem('AssignedTasks', JSON.stringify(getMarkedCompletedArray));
     document.getElementById("assigned-task-done").innerHTML = "Done";
     alert('Task Marked Completed');
+    window.location.href = "assigned-tasks.html";
   }
 
   function markManagerCompleted() {
@@ -230,6 +236,7 @@ if (sessionStorage.getItem("session_email")) {
     localStorage.setItem('MarkedComplete', JSON.stringify(getMarkedCompletedArray));
     document.getElementById("mark-completed-manager").innerHTML = "Done";
     alert('Task Completed');
+    window.location.href = "done-tasks.html";
   }
 
   if (localStorage.getItem('CreatedProjects')) {

@@ -302,6 +302,7 @@ ul {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 40%;
+  margin: auto;
 }
 
 .card:hover {
@@ -464,13 +465,13 @@ a:hover {
 }
 
 div#session-user {
-  color: #21325E;
+  color:  #292456;
   font-weight: bold;
   font-size: 25px;
 }
 
 div#website-name {
-  color: #21325E;;
+  color:  #292456;
   font-weight: bold;
   font-size: 25px;
 }

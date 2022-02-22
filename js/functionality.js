@@ -61,7 +61,7 @@ function submitTask(value) {
 
 if (sessionStorage.getItem("session_email")) {
   console.log(sessionStorage.getItem('session_email'));
-  document.getElementById("session-user").innerHTML = sessionStorage.getItem('set_user_type') + sessionStorage.getItem('session_email');
+  document.getElementById("session-user").innerHTML = sessionStorage.getItem('set_user_type') + ': ' + sessionStorage.getItem('session_email');
 
   function createNewTask() {
     event.preventDefault();

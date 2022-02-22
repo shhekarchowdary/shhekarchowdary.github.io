@@ -61,7 +61,7 @@ function submitTask(value) {
 
 if (sessionStorage.getItem("session_email")) {
   console.log(sessionStorage.getItem('session_email'));
-  document.getElementById("session-user").innerHTML = sessionStorage.getItem('set_user_type') + sessionStorage.getItem('session_email');
+  document.getElementById("session-user").innerHTML = sessionStorage.getItem('set_user_type') + ": " + sessionStorage.getItem('session_email');
 
   function createNewTask() {
     event.preventDefault();
@@ -126,6 +126,7 @@ if (sessionStorage.getItem("session_email")) {
     getProjectArray.push(getProjectObj);
     localStorage.setItem('CreatedProjects', JSON.stringify(getProjectArray));
     alert('Project Created Successfully');
+    window.location.href = "myprojects.html";
   }
 
 

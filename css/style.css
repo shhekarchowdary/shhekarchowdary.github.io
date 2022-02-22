@@ -464,15 +464,20 @@ a:hover {
 }
 
 div#session-user {
-  text-align: right;
+  color: #21325E;
   font-weight: bold;
+  font-size: 25px;
 }
 
 div#website-name {
-  text-align: left;
+  color: #21325E;;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 div#header-div {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  height:  50px;
 }

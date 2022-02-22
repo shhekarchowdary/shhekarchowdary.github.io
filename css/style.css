@@ -464,5 +464,9 @@ a:hover {
 }
 
 div#session-user {
-  text-align: center;
+  text-align: left;
+}
+
+div#website-name {
+  text-align: right;
 }

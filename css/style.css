@@ -350,7 +350,7 @@ a:hover {
 /* Main level */
 .menu {
   margin: 50px auto;
-  width: 800px;
+  width: 100%;
   width: -moz-fit-content;
   width: -webkit-fit-content;
   width: fit-content;
@@ -464,9 +464,15 @@ a:hover {
 }
 
 div#session-user {
-  text-align: left;
+  text-align: right;
+  font-weight: bold;
 }
 
 div#website-name {
-  text-align: right;
+  text-align: left;
+}
+
+div#header-div {
+  display: flex;
+  justify-content: space-between;
 }
